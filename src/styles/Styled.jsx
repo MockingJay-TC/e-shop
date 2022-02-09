@@ -255,6 +255,12 @@ export const ShopText = styled.div`
   @media (max-width: 858px) {
     display: block;
   }
+  @media (max-width: 1280px) {
+    display: block;
+  }
+  @media (max-width: 990px) {
+    display: block;
+  }
 `;
 
 export const Text = styled.h4`
@@ -270,6 +276,18 @@ export const Text = styled.h4`
   @media (max-width: 858px) {
     display: block;
     text-align: center;
+    &:not(:last-child) {
+      margin: 0px;
+    }
+  }
+  @media (max-width: 1280px) {
+    display: block;
+    &:not(:last-child) {
+      margin: 0px;
+    }
+  }
+  @media (max-width: 990px) {
+    display: block;
     &:not(:last-child) {
       margin: 0px;
     }
@@ -290,4 +308,18 @@ export const Foot = styled(Nav)`
 export const Copy = styled.span`
   color: white;
   fonst-size: 2rem;
+`;
+
+export const NavLinked = styled(NavLink)`
+  font-size: 1rem;
+
+  @media (max-width: 858px) {
+    display: none;
+  }
+  @media (max-width: 1140px) {
+    display: none;
+  }
+  @media (max-width: 990px) {
+    display: none;
+  }
 `;

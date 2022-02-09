@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  NavLink,
+  NavLinked,
   NavItems,
   Item,
   Span,
@@ -18,13 +18,13 @@ const Footer = () => {
         <Copy>Copyright ©2018 monsterMuz.Inc</Copy>
         <NavItems>
           <Item>
-            <NavLink href="/"> Policy and Cookie </NavLink>
+            <NavLinked href="/"> Policy and Cookie </NavLinked>
           </Item>
           <Item>
-            <NavLink href="/"> Policy Intellectual </NavLink>
+            <NavLinked href="/"> Policy Intellectual </NavLinked>
           </Item>
           <Item>
-            <NavLink href="/"> Property </NavLink>
+            <NavLinked href="/"> Property </NavLinked>
           </Item>
         </NavItems>
       </Foot>
