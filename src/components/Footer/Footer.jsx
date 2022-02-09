@@ -1,10 +1,8 @@
 import React from "react";
 import {
-  Nav,
   NavLink,
   NavItems,
   Item,
-  Button,
   Span,
   Logo,
   Foot,

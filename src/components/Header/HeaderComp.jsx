@@ -14,8 +14,8 @@ const HeaderComp = ({ childComp }) => {
     <div>
       <Nav>
         <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
+        <label htmlFor="check" className="checkbtn">
+          <i className="fas fa-bars"></i>
         </label>
         <Logo>
           <Span>e</Span>Sale
@@ -38,7 +38,7 @@ const HeaderComp = ({ childComp }) => {
             <Button>Sign Up</Button>
           </Item>
           <Item>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i className="fa-solid fa-cart-shopping"></i>
           </Item>
         </NavItems>
       </Nav>

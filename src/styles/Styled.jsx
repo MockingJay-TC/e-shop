@@ -12,6 +12,14 @@ export const Nav = styled.nav`
 export const NavItems = styled.ul`
   float: right;
   margin-right: 1.875rem;
+  @media (max-width: 1140px) {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  @media (max-width: 990px) {
+    margin-right: 0.1rem;
+    font-size: 1rem;
+  }
   @media (max-width: 858px) {
     position: fixed;
     width: 100%;
@@ -35,6 +43,14 @@ export const Item = styled.li`
     display: block;
     margin: 3.125rem 0;
     line-height: 30px;
+  }
+  @media (max-width: 1140px) {
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+  @media (max-width: 990px) {
+    margin: 0 1rem;
+    font-size: 1rem;
   }
 `;
 
@@ -78,6 +94,12 @@ export const Logo = styled.div`
   color: white;
   font-size: 2rem;
   @media (max-width: 858px) {
+    padding: 0 50px;
+  }
+  @media (max-width: 1140px) {
+    padding: 0 50px;
+  }
+  @media (max-width: 990px) {
     padding: 0 50px;
   }
 `;
