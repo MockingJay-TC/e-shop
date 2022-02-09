@@ -11,8 +11,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HeaderComp childComp={<Home />} />} />{" "}
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 };

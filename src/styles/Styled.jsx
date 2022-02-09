@@ -75,6 +75,7 @@ export const Logo = styled.div`
   display: inline-block;
   padding: 0 100px;
   line-height: 5rem;
+  color: white;
   font-size: 2rem;
   @media (max-width: 858px) {
     padding: 0 50px;
@@ -260,6 +261,11 @@ export const Position = styled.div`
 
 // Footer
 
-export const Footer = styled(Nav)`
+export const Foot = styled(Nav)`
   background-color: #000;
+`;
+
+export const Copy = styled.span`
+  color: white;
+  fonst-size: 2rem;
 `;

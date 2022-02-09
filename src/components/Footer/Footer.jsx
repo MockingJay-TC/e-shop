@@ -7,36 +7,29 @@ import {
   Button,
   Span,
   Logo,
+  Foot,
+  Copy,
 } from "../../styles/Styled";
 const Footer = () => {
   return (
     <div>
-      <Footer>
+      <Foot>
         <Logo>
           <Span>e</Span>Sale
         </Logo>
+        <Copy>Copyright ©2018 monsterMuz.Inc</Copy>
         <NavItems>
           <Item>
-            <NavLink href="/"> NEW </NavLink>
+            <NavLink href="/"> Policy and Cookie </NavLink>
           </Item>
           <Item>
-            <NavLink href="/"> MEN </NavLink>
+            <NavLink href="/"> Policy Intellectual </NavLink>
           </Item>
           <Item>
-            <NavLink href="/"> WOMEN </NavLink>
-          </Item>
-          <Item>
-            <NavLink href="/">TRAVEL</NavLink>
-          </Item>
-          <Item>
-            <Button>Sign Up</Button>
-            <Button>Sign Up</Button>
-          </Item>
-          <Item>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <NavLink href="/"> Property </NavLink>
           </Item>
         </NavItems>
-      </Footer>
+      </Foot>
     </div>
   );
 };
