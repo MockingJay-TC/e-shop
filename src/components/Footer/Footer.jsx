@@ -8,15 +8,10 @@ import {
   Span,
   Logo,
 } from "../../styles/Styled";
-
-const HeaderComp = ({ childComp }) => {
+const Footer = () => {
   return (
     <div>
-      <Nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
+      <Footer>
         <Logo>
           <Span>e</Span>Sale
         </Logo>
@@ -41,10 +36,9 @@ const HeaderComp = ({ childComp }) => {
             <i class="fa-solid fa-cart-shopping"></i>
           </Item>
         </NavItems>
-      </Nav>
-      {childComp}
+      </Footer>
     </div>
   );
 };
 
-export default HeaderComp;
+export default Footer;

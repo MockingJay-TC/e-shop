@@ -17,10 +17,11 @@ export const NavItems = styled.ul`
     width: 100%;
     height: 100vh;
     background: #fff;
-    top: 8rem;
+    top: 5rem;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+    z-index: 99999;
   }
 `;
 
@@ -29,11 +30,20 @@ export const Item = styled.li`
   line-height: 5rem;
   margin: 0 2rem;
   font-weight: 500;
+
+  @media (max-width: 858px) {
+    display: block;
+    margin: 3.125rem 0;
+    line-height: 30px;
+  }
 `;
 
 export const NavLink = styled.a`
   font-size: 1.25rem;
   color: white;
+  @media (max-width: 858px) {
+    color: tomato;
+  }
 `;
 
 export const Button = styled.button`
@@ -46,8 +56,8 @@ export const Button = styled.button`
   transition: 0.4s ease-in-out;
   &:not(:first-child) {
     margin: 0 1rem;
-    background-color: red;
-    border: 2px solid red;
+    background-color: tomato;
+    border: 2px solid tomato;
   }
   &:hover {
     color: white;
@@ -58,7 +68,7 @@ export const Button = styled.button`
 `;
 
 export const Span = styled.span`
-  color: red;
+  color: tomato;
 `;
 
 export const Logo = styled.div`
@@ -66,10 +76,9 @@ export const Logo = styled.div`
   padding: 0 100px;
   line-height: 5rem;
   font-size: 2rem;
-`;
-
-export const Input = styled.input`
-  display: none;
+  @media (max-width: 858px) {
+    padding: 0 50px;
+  }
 `;
 
 export const Label = styled.label`
@@ -173,6 +182,24 @@ export const Item2 = styled(PromoItem)`
 export const Item3 = styled(PromoItem)`
   background-image: url(Assets/images/image3.jpg);
 `;
+export const Item4 = styled(PromoItem)`
+  background-image: url(Assets/images/image4.jpg);
+`;
+export const Item5 = styled(PromoItem)`
+  background-image: url(Assets/images/image5.jpg);
+`;
+export const Item6 = styled(PromoItem)`
+  background-image: url(Assets/images/image6.jpg);
+`;
+export const Item7 = styled(PromoItem)`
+  background-image: url(Assets/images/image7.jpg);
+`;
+export const Item8 = styled(PromoItem)`
+  background-image: url(Assets/images/image8.jpg);
+`;
+export const Item9 = styled(PromoItem)`
+  background-image: url(Assets/images/image9.jpg);
+`;
 export const ItemText = styled.h4`
   position: absolute;
   bottom: 20px;
@@ -180,4 +207,59 @@ export const ItemText = styled.h4`
   padding: 8px 16px;
   border: 3px solid tomato;
   cursor: pointer;
+`;
+
+// Shop
+export const Shop = styled.div`
+  width: 90%;
+  margin: 50px auto;
+`;
+
+export const New = styled(Promo)`
+  margin: 40px 0px;
+  gap: 8px;
+`;
+
+export const NewText = styled.span`
+  border-bottom: 8px solid tomato;
+  font-size: 32px;
+`;
+
+export const ShopText = styled.div`
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 858px) {
+    display: block;
+  }
+`;
+
+export const Text = styled.h4`
+  padding: 8px 16px;
+  text-transform: uppercase;
+  border: 3px solid tomato;
+  cursor: pointer;
+  &:not(:last-child) {
+    color: white;
+    border: none;
+    margin-right: 100px;
+  }
+  @media (max-width: 858px) {
+    display: block;
+    text-align: center;
+    &:not(:last-child) {
+      margin: 0px;
+    }
+  }
+`;
+export const Position = styled.div`
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+`;
+
+// Footer
+
+export const Footer = styled(Nav)`
+  background-color: #000;
 `;

@@ -5,3 +5,25 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+.checkbtn {
+  font-size: 1.875rem;
+  color: white;
+  float: right;
+  line-height: 5rem;
+  margin-right: 2.5rem;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
